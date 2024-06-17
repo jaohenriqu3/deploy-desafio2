@@ -1,0 +1,132 @@
+.main-content {
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 285px;
+    height: 446px;
+    background-color: #F4F5F7;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.card img {
+    width: 285px;
+    height: 301px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+.discount-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: #E97171;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.discount-circle-new {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: #2EC1AC;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.main-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.discount-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+} 
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.page-btn, .next-btn {
+    background-color: #F9F1E7;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.page-btn {
+    width: 60px;
+    height: 60px;
+}
+
+.next-btn {
+    width: 98px;
+    height: 60px;
+}
+
+.page-btn:hover, .next-btn:hover {
+    background-color: #B88E2F;
+    color: #FFFFFF;
+}
+
+.page-btn:focus, .next-btn:focus {
+    background-color: #B88E2F;
+    color: #FFFFFF;
+    outline: none;
+}

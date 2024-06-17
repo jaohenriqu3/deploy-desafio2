@@ -1,0 +1,28 @@
+/* Banner */
+.banner {
+    width: 100%;
+    max-width: 1440px;
+    height: 316px;
+    background: url('/assets/images/banner-img.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-content {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 16px;
+    color: #000000;
+}
